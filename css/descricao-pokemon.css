@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  transition: all 0.8s ease;
+  overflow-x: hidden;
+}
+
+/* Main */
+main {
+  width: 100%;
+  height: 90vh;
+}
+
+/* Conteudo */
+main .conteudo {
+  width: 100%;
+  height: 100%;
+}
+
+/* Parte principal */
+main .conteudo .parte_principal {
+  width: 100%;
+  height: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .conteudo .parte_principal .imagem_pokemon {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .conteudo .parte_principal .imagem_pokemon img {
+  width: 10rem;
+  object-fit: contain;
+}
+
+/* Nome e tipo do pokemon */
+main .conteudo .parte_principal .nome_pokemon {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem 0;
+}
+
+main .conteudo .parte_principal .nome_pokemon h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+main .conteudo .parte_principal .tipo_pokemon {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .conteudo .parte_principal .tipo_pokemon p {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+/* Parte secundaria */
+main .conteudo .parte_secundaria {
+  width: 100%;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Linha 1  */
+main .conteudo .parte_secundaria .linha1 {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .conteudo .parte_secundaria .linha1 ul {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main .conteudo .parte_secundaria .linha1 ul li {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Linha 2 */
+main .conteudo .parte_secundaria .linha2 {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .conteudo .parte_secundaria .linha2 p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Atributos */
+main .conteudo .parte_secundaria .atributos {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+main .conteudo .parte_secundaria .atributos ul {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+main .conteudo .parte_secundaria .atributos ul li {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.steel {
+  background: #c5c5c5;
+}
+
+.fire {
+  background: #fe9442;
+}
+
+.grass {
+  background: #6aefad;
+}
+
+.electric {
+  background: #f5bd22;
+}
+
+.water,
+.ice {
+  background: #83c8d7;
+}
+
+.ground {
+  background: #9f7953;
+}
+
+.rock {
+  background: #89896f;
+}
+
+.fairy {
+  background: #ea5bb8;
+}
+
+.poison {
+  background: #9140e1;
+}
+
+.bug {
+  background: #f8d5a3;
+}
+
+.dragon {
+  background: #ef722f;
+}
+
+.psychic {
+  background: #7c21d2;
+}
+
+.flying {
+  background: #49c0ef;
+}
+
+.fighting {
+  background: #ce8e0d;
+}
+
+.normal {
+  background: #8f4a14;
+}
+
+.ghost {
+  background: #1c1c1c;
+  color: #fff;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  main .conteudo .parte_principal .imagem_pokemon img {
+    width: 50%;
+  }
+}
+@media (max-width: 400px) {
+  main .conteudo .parte_principal .imagem_pokemon img {
+    width: 60%;
+  }
+  main .conteudo .parte_secundaria .linha1 ul {
+    flex-direction: column;
+  }
+  main .conteudo .parte_secundaria .atributos {
+    flex-direction: column;
+  }
+}

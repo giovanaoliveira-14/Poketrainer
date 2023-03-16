@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Poketrainer | Descobrindo Pokemóns</title>
+    <link rel="icon" href="./img/icones/icons8-pokebola-64.png" />
+    <!-- Links CSS -->
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/pokemons.css" />
+    <!-- Links externos -->
+    <script
+      src="https://kit.fontawesome.com/026675cdf7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="menu-geral fechado">
+      <nav>
+        <div class="nav-bar">
+          <div class="logo">
+            <a href="./index.html"> Poketrainer </a>
+          </div>
+          <div class="menu-mobile">
+            <div class="linha1"></div>
+            <div class="linha2"></div>
+            <div class="linha3"></div>
+          </div>
+          <div class="menu">
+            <ul class="nav-links">
+              <li class="menu-links">
+                <a href="./index.html"> Home </a>
+              </li>
+              <li class="menu-links">
+                <a href="./pokemons.html">Pokémons </a>
+              </li>
+              <li class="menu-links">
+                <a href="./sobre-projeto.html">Sobre o projeto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Conteúdo do site -->
+      <div class="conteudo">
+        <div class="parte_pesquisa">
+          <div class="parte_texto">
+            <!-- Textinho -->
+            <h3>Descubra os diversos Pokémons!</h3>
+          </div>
+          <!-- Input para buscar os Pokémons -->
+          <div class="campo_input">
+            <form class="formulario" id="formulario">
+              <input
+                type="search"
+                name="pesquisa_pokemon"
+                placeholder="Buscar Pokémon...."
+                class="busca"
+                id="busca"
+              />
+              <button
+                type="submit"
+                name="btn_pesquisar"
+                id="btn_pesquisar"
+                class="btn_procurar"
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- Parte referente aos cards
+            Obs: Os cards são gerados no arquivo Javascript
+            -->
+        <div class="parte_pokemons"></div>
+      </div>
+    </main>
+    <script src="./js/menu.js"></script>
+    <script src="./js/pokemons.js"></script>
+  </body>
+</html>

@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  transition: all 0.8s ease;
+}
+
+/* Cor dos links do menu */
+.menu-geral .nav-bar .logo a {
+  color: #000;
+}
+
+.menu-geral .nav-bar .menu .menu-links a {
+  color: #000;
+}
+
+/* Main e conteudo */
+main .conteudo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Parte pesquisa */
+main .conteudo .parte_pesquisa {
+  width: 100%;
+  height: 13rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .conteudo .parte_pesquisa .parte_texto {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .conteudo .parte_pesquisa .parte_texto h3 {
+  font-size: 1.5rem;
+}
+
+main .conteudo .parte_pesquisa .parte_texto h3:hover {
+  color: #f5bd22;
+  transform: scale(1.02);
+}
+
+main .conteudo .parte_pesquisa .campo_input {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .conteudo .parte_pesquisa .campo_input form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .conteudo .parte_pesquisa .campo_input form input {
+  height: 3rem;
+  width: 40rem;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  padding: 0 30px;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  transition: all 0.3s ease;
+}
+main .conteudo .parte_pesquisa .campo_input form input:focus {
+  border-color: #f5bd22;
+}
+
+main .conteudo .parte_pesquisa .campo_input form button {
+  border: none;
+  background: transparent;
+  margin: 0 1rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+main .conteudo .parte_pesquisa .campo_input form button i {
+  font-size: 1.5rem;
+}
+
+main .conteudo .parte_pesquisa .campo_input form button:hover {
+  cursor: pointer;
+}
+main .conteudo .parte_pesquisa .campo_input form button:active {
+  border-bottom: 1px solid #ccc;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+/* Parte pokemon */
+main .conteudo .parte_pokemons {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+main .conteudo .parte_pokemons .elemento a {
+  text-decoration: none;
+  color: #000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+main .conteudo .parte_pokemons .elemento a:hover {
+  transform: scale(1.02);
+}
+
+/* Card pokemon */
+
+main .conteudo .parte_pokemons .elemento a .card_pokemons {
+  width: 20rem;
+  height: 20rem;
+  border: none;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  border-radius: 20px;
+  display: flex;
+  margin: 0.5rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+
+main .conteudo .parte_pokemons .elemento a .card_pokemons .imagem {
+  width: 100%;
+  height: 54%;
+  margin-bottom: 1rem;
+  display: flex;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  align-items: center;
+  justify-content: center;
+}
+
+main .conteudo .parte_pokemons .elemento a .card_pokemons .imagem img {
+  width: 8rem;
+  padding: 0.8rem;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+main .conteudo .parte_pokemons .elemento a .card_pokemons h3 {
+  width: 100%;
+  height: 4.2rem;
+  margin: 0.5rem 0;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+  border-radius: 20px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+}
+main .conteudo .parte_pokemons .elemento a .card_pokemons .tipo_pokemon {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+main .conteudo .parte_pokemons .elemento a .card_pokemons .tipo_pokemon h3 {
+  width: 50%;
+  height: 2rem;
+  text-align: center;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.steel {
+  background: #c5c5c5;
+}
+
+.fire {
+  background: #fe9442;
+}
+
+.grass {
+  background: #6aefad;
+}
+
+.electric {
+  background: #f5bd22;
+}
+
+.water,
+.ice {
+  background: #83c8d7;
+}
+
+.ground {
+  background: #9f7953;
+}
+
+.rock {
+  background: #89896f;
+}
+
+.fairy {
+  background: #ea5bb8;
+}
+
+.poison {
+  background: #9140e1;
+}
+
+.bug {
+  background: #f8d5a3;
+}
+
+.dragon {
+  background: #ef722f;
+}
+
+.psychic {
+  background: #7c21d2;
+}
+
+.flying {
+  background: #49c0ef;
+}
+
+.fighting {
+  background: #ce8e0d;
+}
+
+.normal {
+  background: #8f4a14;
+}
+
+.ghost {
+  background: #1c1c1c;
+  color: #fff;
+}
+
+/* Responsivo */
+@media (max-width: 700px) {
+  main .conteudo .parte_pesquisa .parte_texto h3 {
+    font-size: 1.2rem;
+  }
+
+  main .conteudo .parte_pesquisa .campo_input form input {
+    width: 30rem;
+  }
+  main .conteudo .parte_pesquisa .campo_input form button i {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 600px) {
+  main .conteudo .parte_pesquisa .parte_texto h3 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  main .conteudo .parte_pesquisa .campo_input form input {
+    width: 20rem;
+  }
+  main .conteudo .parte_pesquisa .campo_input form button i {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 350px) {
+  main .conteudo .parte_pokemons .elemento a .card_pokemons {
+    width: 16rem;
+    height: 25rem;
+  }
+  main .conteudo .parte_pokemons .elemento a .card_pokemons .imagem {
+    height: 63%;
+  }
+}
+@media (max-width: 300px) {
+  main .conteudo .parte_pokemons .elemento a .card_pokemons {
+    width: 13rem;
+    height: 30rem;
+  }
+  main .conteudo .parte_pokemons .elemento a .card_pokemons .imagem {
+    height: 65%;
+  }
+
+  main .conteudo .parte_pokemons .elemento a .card_pokemons h3 {
+    height: 5.9rem;
+  }
+}

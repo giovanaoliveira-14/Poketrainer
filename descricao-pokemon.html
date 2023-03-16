@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poketrainer | Descrição do Pokémon</title>
+    <link rel="icon" href="./img/icones/icons8-pokebola-64.png" />
+    <!-- Links CSS -->
+    <link rel="stylesheet" href="./css/menu.css" />
+    <link rel="stylesheet" href="./css/descricao-pokemon.css">
+    <!-- Links externos -->
+    <script
+      src="https://kit.fontawesome.com/026675cdf7.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <header class="menu-geral">
+        <nav class="nav " id="conteudo">
+          <div class="nav-bar">
+            <div class="logo">
+              <a href="./index.html" id="logo"> Poketrainer </a>
+            </div> 
+            <div class="menu-mobile ">
+              <div class="linha1 " id="L1"></div>
+              <div class="linha2 " id="L2"></div>
+              <div class="linha3 " id="L3"></div>
+            </div>
+            <div class="menu">
+              <ul class="nav-links nav "  id="nav">
+                <li class="menu-links" >
+                  <a href="./index.html" id="home"> Home </a>
+                </li>
+                <li class="menu-links">
+                  <a href="./pokemons.html" id="pokemons">Pokémons </a>
+                </li>
+                <li class="menu-links">
+                  <a href="./sobre-projeto.html" id="sobre">Sobre o projeto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <!-- Conteúdo da página -->
+        <div class="conteudo">
+            <div class="parte_principal " id="principal">
+                <!-- Imagem do Pokémon -->
+                <div class="imagem_pokemon">
+                    <img src="" alt="pokemon" class="pokemon-imagem">
+                </div>
+                <!-- Nome do Pokpemon -->
+                <div class="nome_pokemon">
+                    <h2 class="poke-name"></h2>
+                </div>
+                <!-- Tipo do Pokémon -->
+                <div class="tipo_pokemon">
+                    <p class="poke-tipo"></p>
+                </div>
+            </div>
+            <div class="parte_secundaria">
+                <!-- ALtura e peso -->
+                <div class="linha1">
+                    <ul>
+                        <li class="poke-altura">
+                        </li>
+                        <li class="poke-peso">
+                        </li>
+                    </ul>
+                </div>
+                <!-- Soma de todos os atributos do Pokpemon -->
+                <div class="linha2">
+                    <p class="poke-total">Total: </p>
+                </div>
+                <div class="atributos">
+                    <ul>
+                        <!-- Vida -->
+                        <li class="poke-hp"></li>
+                        <!-- Ataque -->
+                        <li class="poke-ataque"></li>
+                        <!-- Defesa -->
+                        <li class="poke-defesa"></li>
+                    </ul>
+                    <ul>
+                        <!-- Ataque especial -->
+                        <li class="poke-ataEs"></li>
+                        <!-- Defesa especial -->
+                        <li class="poke-defEs"></li>
+                        <!-- Velocidade -->
+                        <li class="poke-velocidade"></li>
+                    </ul>
+                </div>
+      </main>
+      <script src="./js/menu.js"></script>
+      <script src="./js/descricao-pokemon.js"></script>
+</body>
+</html>

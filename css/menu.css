@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  transition: all 0.8s ease;
+  overflow-x: hidden;
+}
+
+/* Menu geral*/
+.menu-geral {
+  width: 100%;
+  height: 13vh;
+}
+.menu-geral .nav-bar {
+  width: 100%;
+  height: 13vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menu-geral .nav-bar .logo {
+  height: 100%;
+}
+.menu-geral .nav-bar .logo a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: 2rem;
+  letter-spacing: 10px;
+  font-weight: 600;
+}
+
+.menu-geral .nav-bar .menu {
+  height: 13vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-geral .nav-bar .menu .nav-links {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.menu-geral .nav-bar .menu .menu-links {
+  list-style: none;
+  margin-left: 32px;
+}
+.menu-geral .nav-bar .menu .menu-links a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+
+/* Hover */
+
+/* Logo */
+.menu-geral .nav-bar .logo a:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+  transition: all 0.4s easy-in-out;
+}
+
+/* Li */
+.menu-geral .nav-bar .menu .menu-links:hover {
+  opacity: 0.9;
+  transform: scale(1.03);
+  cursor: pointer;
+  transition: all 0.4s easy-in-out;
+}
+
+/* Menu para telas menores*/
+.menu-mobile {
+  display: none;
+  cursor: pointer;
+}
+.menu-mobile div {
+  width: 32px;
+  height: 3px;
+  color: #000;
+  margin: 8px;
+  transition: 0.3s;
+  background: #000;
+}
+
+/* Responsividade */
+@media screen and (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
+  .menu-geral .nav-bar .menu {
+    position: absolute;
+    top: 13vh;
+    right: 0;
+    background: #fff;
+    height: 87vh;
+    width: 50vw;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    z-index: 100;
+  }
+  .menu-geral .nav-bar .menu .nav-links {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+  }
+  .menu-geral .nav-bar .menu .nav-links .menu-links {
+    opacity: 0;
+    margin-left: 0;
+  }
+  .menu-mobile {
+    display: block;
+  }
+}
+@media screen and (max-width: 400px) {
+  .menu-geral .nav-bar .logo a {
+    font-size: 1.3rem;
+  }
+  .menu-geral .nav-bar .menu .menu-links {
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 300px) {
+  .menu-geral .nav-bar .menu .menu-links a {
+    font-size: 1rem;
+    letter-spacing: 0;
+  }
+}
+
+.menu-geral .nav-bar .menu.active {
+  transform: translateX(0);
+}
+
+@keyframes menuAparecer {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.menu-mobile.active .linha1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+.menu-mobile.active .linha2 {
+  opacity: 0;
+}
+.menu-mobile.active .linha3 {
+  transform: rotate(45deg) translate(-7px, -8px);
+}
+
+.steel {
+  background: #c5c5c5;
+  color: #000;
+}
+
+.fire {
+  background: #fe9442;
+  color: #000;
+}
+
+.grass {
+  background: #6aefad;
+  color: #000;
+}
+
+.electric {
+  background: #f5bd22;
+  color: #000;
+}
+
+.water,
+.ice {
+  background: #83c8d7;
+  color: #000;
+}
+
+.ground {
+  background: #9f7953;
+  color: #fff;
+}
+
+.rock {
+  background: #89896f;
+  color: #fff;
+}
+
+.fairy {
+  background: #ea5bb8;
+  color: #000;
+}
+
+.poison {
+  background: #9140e1;
+  color: #fff;
+}
+
+.bug {
+  background: #f8d5a3;
+  color: #000;
+}
+
+.dragon {
+  background: #ef722f;
+  color: #000;
+}
+
+.psychic {
+  background: #7c21d2;
+  color: #fff;
+}
+
+.flying {
+  background: #49c0ef;
+  color: #000;
+}
+
+.fighting {
+  background: #ce8e0d;
+  color: #000;
+}
+
+.normal {
+  background: #8f4a14;
+  color: #fff;
+}
+
+.ghost {
+  background: #1c1c1c;
+  color: #fff;
+}

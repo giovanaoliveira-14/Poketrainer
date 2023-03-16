@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  transition: all 0.8s ease;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+/* Main e conteudo */
+main {
+  width: 100vw;
+  height: 87vh;
+}
+
+/* Cor dos links do menu */
+.menu-geral .nav-bar .logo a {
+  color: #000;
+}
+
+.menu-geral .nav-bar .menu .menu-links a {
+  color: #000;
+}
+
+.conteudo {
+  width: 100%;
+  height: 100%;
+}
+
+/* Parte principal do index */
+.conteudo .conteudo-principal {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+/* Lado esquerdo do conteudo principal */
+.conteudo .conteudo-principal .lado-esquerdo {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Texto principal */
+.conteudo .conteudo-principal .lado-esquerdo .texto-principal {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+.conteudo .conteudo-principal .lado-esquerdo .texto-principal h3 {
+  font-size: 3em;
+  color: #000;
+}
+
+.conteudo .conteudo-principal .lado-esquerdo .texto-principal i {
+  font-size: 1em;
+  color: #000;
+  animation: estrelaCores 0.9s infinite;
+}
+
+/* Botão principal */
+.conteudo .conteudo-principal .lado-esquerdo .btn-principal {
+  width: 90%;
+  display: flex;
+  padding: 0 1rem;
+}
+.conteudo .conteudo-principal .lado-esquerdo .btn-principal button {
+  width: 20rem;
+  height: 3.8rem;
+  border: none;
+  border-radius: 15px;
+  background: #ffb727;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 50%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+}
+.conteudo .conteudo-principal .lado-esquerdo .btn-principal button a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+/* Lado direito do conteudo principal */
+.conteudo .conteudo-principal .lado-direito {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Imagem principal */
+.conteudo .conteudo-principal .lado-direito .imagem-principal {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.conteudo .conteudo-principal .lado-direito .imagem-principal img {
+  width: 30rem;
+  height: 30rem;
+  object-fit: contain;
+}
+
+/* Transição de cores */
+@keyframes estrelaCores {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+/*Hover*/
+.conteudo .conteudo-principal .lado-esquerdo .btn-principal button:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+  transition: all 0.4s easy-in-out;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 1025px) {
+  .conteudo .conteudo-principal .lado-esquerdo .texto-principal h3 {
+    font-size: 2.7em;
+  }
+  .conteudo .conteudo-principal .lado-direito .imagem-principal img {
+    width: 28rem;
+    height: 28rem;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .conteudo .conteudo-principal .lado-esquerdo .texto-principal h3 {
+    font-size: 2.7em;
+  }
+  .conteudo .conteudo-principal .lado-direito .imagem-principal img {
+    width: 25rem;
+    height: 25rem;
+  }
+}
+@media screen and (max-width: 810px) {
+  .conteudo .conteudo-principal .lado-esquerdo .texto-principal h3 {
+    font-size: 2.5em;
+  }
+  .conteudo .conteudo-principal .lado-direito .imagem-principal img {
+    width: 23rem;
+    height: 23rem;
+  }
+}
+@media screen and (max-width: 750px) {
+  .conteudo .conteudo-principal .lado-esquerdo .texto-principal h3 {
+    font-size: 2.1em;
+  }
+  .conteudo .conteudo-principal .lado-direito .imagem-principal img {
+    width: 20rem;
+    height: 20rem;
+  }
+  .conteudo .conteudo-principal .lado-esquerdo .btn-principal button {
+    width: 18rem;
+    height: 3.5rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .conteudo .conteudo-principal .lado-esquerdo {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .conteudo .conteudo-principal .lado-esquerdo .texto-principal h3 {
+    text-align: center;
+  }
+  .conteudo .conteudo-principal .lado-esquerdo .btn-principal {
+    justify-content: center;
+  }
+  .conteudo .conteudo-principal .lado-direito {
+    display: none;
+  }
+}
+@media screen and (max-width: 300px) {
+  .conteudo .conteudo-principal .lado-esquerdo .texto-principal h3 {
+    font-size: 1.8em;
+  }
+}
